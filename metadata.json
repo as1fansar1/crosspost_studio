@@ -1,0 +1,5 @@
+{
+  "name": "CrossPost Studio",
+  "description": "A simple interface to compose and post content to both Threads and X simultaneously, with a unified composer and platform-specific previews.",
+  "requestFramePermissions": []
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authorize App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white flex items-center justify-center h-screen font-sans">
+    <div class="bg-gray-800 p-8 rounded-lg shadow-2xl text-center max-w-sm w-full">
+        <div class="w-10 h-10 mx-auto mb-4">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+        </div>
+        <h1 class="text-xl font-bold mb-2">Authorize CrossPost Studio</h1>
+        <p class="text-gray-400 mb-6">This app is requesting permission to access your account.</p>
+        
+        <div class="bg-gray-700 p-4 rounded-lg text-left mb-6">
+            <h2 class="font-semibold mb-2">This app will be able to:</h2>
+            <ul class="text-sm text-gray-300 list-disc list-inside space-y-1">
+                <li>Read Tweets from your timeline.</li>
+                <li>Post and delete Tweets for you.</li>
+                <li>See who you follow, and follow new people.</li>
+            </ul>
+        </div>
+
+        <button id="auth-btn" class="w-full bg-cyan-600 hover:bg-cyan-500 text-white font-bold py-2 px-4 rounded-full transition-colors mb-2">
+            Authorize app
+        </button>
+        <button id="cancel-btn" class="w-full text-gray-400 hover:text-white font-bold py-2 px-4 rounded-full transition-colors">
+            Cancel
+        </button>
+    </div>
+    <script type="module" src="/auth/x.tsx"></script>
+</body>
+</html>
